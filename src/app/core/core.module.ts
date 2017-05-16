@@ -9,7 +9,10 @@ const routes: Routes = [
     path:'', loadChildren:'./../home/home.module#HomeModule'
   },
   {
-    path:'*', loadChildren:'./../home/home.module#HomeModule'
+    path:'calculadora', loadChildren:'./../calculadora/calculadora.module#CalculadoraModule'
+  },
+  {
+    path:'**', redirectTo:''
   }
 ];
  

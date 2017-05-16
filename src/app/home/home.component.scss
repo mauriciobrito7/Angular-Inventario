@@ -1,0 +1,12 @@
+@import '~assets/scss/_config';
+
+.main{
+    padding: $gutter;
+    &-title{
+        display: block;
+        text-align: center;
+        span{
+            border-bottom: 2px solid color(seaBlue1);
+        }
+    }
+}

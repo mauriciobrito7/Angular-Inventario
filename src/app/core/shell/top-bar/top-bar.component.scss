@@ -7,4 +7,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background: linear-gradient(to right,color(seaBlue1), color(seaBlue2));
+    color: color(white);
+    &-branding{
+        font-family: $font-branding;
+    }
+    @include desde($small){
+        font-size: 1.3em;        
+    }
+    @include desde($large){
+        font-size: 1.5em;
+    }
 }

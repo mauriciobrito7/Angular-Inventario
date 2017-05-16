@@ -1,0 +1,6 @@
+@import '~assets/scss/_config';
+main{
+    max-width: $large;
+    margin: $gutter auto !important;
+    @include box_shadow(1);
+}
