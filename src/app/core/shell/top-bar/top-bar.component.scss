@@ -1,0 +1,10 @@
+@import '~assets/scss/_config';
+
+.nav-bar{
+    width: 100%;
+    height: 3em;
+    padding: $gutter;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

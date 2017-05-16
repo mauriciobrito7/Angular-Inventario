@@ -1,0 +1,64 @@
+//Aqui se guardarab las variables
+$light:300;
+$normal:400;
+//Gutter
+$gutter:1em;
+@font-face {
+   font-family: Jaapokki;
+   font-style: normal;
+   font-weight: $normal;
+   src: url('~/../fonts/Jaapokkisubtract-Regular.otf');
+}
+//Montserrat para los textos
+@font-face {
+   font-family: Montserrat;
+   font-style: normal;
+   font-weight: $normal;
+   src: url('~/../fonts/Montserrat-Regular.ttf');
+}
+$font-text:'Montserrat';
+$font-branding:'Jaapokki';
+
+//Mixin para media queries
+@mixin desde($size){
+	@media screen and (min-width:$size){
+		@content;
+	}
+}
+//Breakpoints
+$small:480px;
+$medium:768px;
+$large:1025px;
+$x-large:1400px;
+
+//Convertir px a em
+@function em($el, $parent: 16px){
+	@return ($el/$parent)*1em;
+}
+
+//Convertir px a rem
+@function rem($el, $parent: 16px){
+	@return ($el/$parent)*1rem;
+}
+
+$font-size:em(16px);
+$h3-size: $font-size * 1.15;
+$h2-size: $font-size * 1.35;
+$h1-size: $font-size * 1.7;
+
+//Colores
+$colors:(
+	links: #38B281,
+    hover: #31CAE4,
+    background:#37484B,
+	white: #ffffff,
+	black: #212121,
+	grey: #f0f0f0,
+	greyDark:#BDC3C7,
+	portrait: #F3904F,
+	portraitc:#3B4371
+);
+
+@function color($color){
+	@return map-get($colors,$color);
+}
