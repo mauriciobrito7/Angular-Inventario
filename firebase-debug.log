@@ -3,7 +3,7 @@
 [debug] CLI Version:  3.8.0
 [debug] Platform:     win32
 [debug] Node Version: v7.5.0
-[debug] Time:         Wed May 17 2017 03:03:03 GMT-0400 (Hora estándar de Venezuela)
+[debug] Time:         Wed May 17 2017 03:14:36 GMT-0400 (Hora estándar de Venezuela)
 [debug] ----------------------------------------------------------------------
 [debug] 
 [debug] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
@@ -13,13 +13,13 @@
   client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
   grant_type: 'refresh_token',
   scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
- Wed May 17 2017 03:03:03 GMT-0400 (Hora estándar de Venezuela)
+ Wed May 17 2017 03:14:36 GMT-0400 (Hora estándar de Venezuela)
 [debug] <<< HTTP RESPONSE 200
 [debug] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/businessapp-e8c0b  
- Wed May 17 2017 03:03:04 GMT-0400 (Hora estándar de Venezuela)
+ Wed May 17 2017 03:14:37 GMT-0400 (Hora estándar de Venezuela)
 [debug] <<< HTTP RESPONSE 200
 [debug] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/businessapp-e8c0b/tokens  
- Wed May 17 2017 03:03:05 GMT-0400 (Hora estándar de Venezuela)
+ Wed May 17 2017 03:14:38 GMT-0400 (Hora estándar de Venezuela)
 [debug] <<< HTTP RESPONSE 200
 [info] 
 [info] === Deploying to 'businessapp-e8c0b'...
