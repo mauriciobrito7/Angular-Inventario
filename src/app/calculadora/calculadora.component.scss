@@ -1,0 +1,58 @@
+@import '~assets/scss/_config';
+.title{
+    display: block;
+    text-align: center;
+    margin:$gutter 0 !important;
+    span{
+         border-bottom: 2px solid color(seaBlue1);
+    }
+}
+.main{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+.form{
+    margin: 0 auto !important;
+    max-width: $small;
+    @include box_shadow(2);
+    
+    &-group{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        padding: $gutter;
+        background: color(black);
+    }
+    label, input{
+        margin: $gutter*0.7 auto !important;
+        width: 65%;
+        font-family: $font-text;
+        font-size: $gutter;
+    }
+    label{
+        text-align: center;
+        color: color(white);
+        height: $gutter;
+    }
+    input{
+        border-width: 0px;
+        border-bottom-width: 1px;
+        padding: $gutter * 0.5;
+    }
+    input:focus{
+        outline-color:color(seaBlue2);
+    }
+    &-answer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: linear-gradient(to right, color(seaBlue1), color(seaBlue2));
+        color: color(white);
+        padding: $gutter*0.5;
+        font-family: $font-text;
+        width: 100%;
+        border:0;
+        margin: 0 auto !important;
+    }
+}

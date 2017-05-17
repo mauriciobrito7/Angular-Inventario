@@ -8,7 +8,7 @@ import { ShellComponent } from './core/shell/shell.component';
 
 @NgModule({
   declarations: [
-  ],
+ ],
   imports: [
     BrowserModule,
     FormsModule,

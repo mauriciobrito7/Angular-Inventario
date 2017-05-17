@@ -1,3 +1,23 @@
-<p>
-  calculadora works!
-</p>
+<h3 class="title">
+    <span>Calculadora</span>
+</h3>
+<main class="main">
+    <div class="form">
+      <div class="form-group">
+        <label for="precioDolares">Precio en dolares $:</label>
+        <input  id="precioDolares" [(ngModel)]="precioDolares">
+        <label for="precioDolarToday">Precio DolarToday en Bsf:</label>
+        <input  id="precioDolarToday" [(ngModel)]="precioDolarToday">
+        <label for="prime">Costo de prime:</label>
+        <input  id="prime" [(ngModel)]="prime">
+        <label for="porcentaje">Porcentaje de ganancia:</label>
+        <input  id="porcentaje" [(ngModel)]="porcentaje">
+        <label for="envio">Costo de envio en Bsf:</label>
+        <input  id="envio" [(ngModel)]="envio">
+      </div>
+      
+      <div class="form-answer">
+        <span>precio de venta: {{precioDolares | calculatorPrice: [precioDolarToday, prime, porcentaje, envio]}}</span> <span>ganancia : {{precioDolares | calculatorEarn: [precioDolarToday, prime, porcentaje, envio]}}</span>
+      </div>
+    </div>
+</main>

@@ -9,8 +9,10 @@
     align-items: center;
     background: linear-gradient(to right,color(seaBlue1), color(seaBlue2));
     color: color(white);
+    @include box_shadow(2);
     &-branding{
         font-family: $font-branding;
+        color: color(white);
     }
     @include desde($small){
         font-size: 1.3em;        
