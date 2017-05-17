@@ -1,0 +1,38 @@
+[debug] ----------------------------------------------------------------------
+[debug] Command:      C:\Program Files\nodejs\node.exe C:\Users\Mauricio\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase deploy
+[debug] CLI Version:  3.8.0
+[debug] Platform:     win32
+[debug] Node Version: v7.5.0
+[debug] Time:         Wed May 17 2017 12:19:40 GMT-0400 (Hora estándar de Venezuela)
+[debug] ----------------------------------------------------------------------
+[debug] 
+[debug] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token { refresh_token: '1/B6xo6mohcTlF8LzcDtk8hZ7YbfBBAYkpbJT387Qoxwc',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Wed May 17 2017 12:19:40 GMT-0400 (Hora estándar de Venezuela)
+[debug] <<< HTTP RESPONSE 200
+[debug] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/businessapp-e8c0b  
+ Wed May 17 2017 12:19:41 GMT-0400 (Hora estándar de Venezuela)
+[debug] <<< HTTP RESPONSE 200
+[debug] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/businessapp-e8c0b/tokens  
+ Wed May 17 2017 12:19:41 GMT-0400 (Hora estándar de Venezuela)
+[debug] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'businessapp-e8c0b'...
+[info] 
+[debug] TypeError: targetNames.join is not a function
+    at deploy (C:\Users\Mauricio\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:68:57)
+    at Command._action (C:\Users\Mauricio\AppData\Roaming\npm\node_modules\firebase-tools\commands\deploy.js:47:12)
+    at C:\Users\Mauricio\AppData\Roaming\npm\node_modules\firebase-tools\lib\command.js:176:29
+    at tryCatch (C:\Users\Mauricio\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\rsvp\dist\rsvp.js:539:12)
+    at invokeCallback (C:\Users\Mauricio\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\rsvp\dist\rsvp.js:554:13)
+    at publish (C:\Users\Mauricio\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\rsvp\dist\rsvp.js:522:7)
+    at flush (C:\Users\Mauricio\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\rsvp\dist\rsvp.js:2414:5)
+    at _combinedTickCallback (internal/process/next_tick.js:67:7)
+    at process._tickCallback (internal/process/next_tick.js:98:9)
+[error] 
+[error] Error: An unexpected error has occurred.
