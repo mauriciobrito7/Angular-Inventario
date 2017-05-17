@@ -6,11 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./calculadora.component.scss']
 })
 export class CalculadoraComponent implements OnInit {
-  private precioDolares = 64;
-  private precioDolarToday = 5000 ;
-  private prime = 3;
-  private porcentaje = 30;
-  private envio = 20000;
+   precioDolares = 64;
+   precioDolarToday = 5000 ;
+   prime = 3;
+   porcentaje = 30;
+   envio = 20000;
   constructor() { 
   }
 
