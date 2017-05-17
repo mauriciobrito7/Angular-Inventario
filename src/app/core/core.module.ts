@@ -5,7 +5,16 @@ import { TopBarComponent } from './shell/top-bar/top-bar.component';
 import { MainContentComponent } from './shell/main-content/main-content.component';
 import { Routes, RouterModule } from '@angular/router';
 
+import { AngularFireModule } from 'angularfire2';
 
+export const firebaseConfig = {
+    apiKey: "AIzaSyAjh3khnudY3_L_egDbauO06yOL9mCfXbk",
+    authDomain: "businessapp-e8c0b.firebaseapp.com",
+    databaseURL: "https://businessapp-e8c0b.firebaseio.com",
+    projectId: "businessapp-e8c0b",
+    storageBucket: "businessapp-e8c0b.appspot.com",
+    messagingSenderId: "672216814772"
+}
 
 const routes: Routes = [
   {
@@ -22,7 +31,8 @@ const routes: Routes = [
 @NgModule({
   imports: [
     CommonModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    AngularFireModule.initializeApp(firebaseConfig)
   ],
   declarations: [ShellComponent, TopBarComponent, MainContentComponent],
   exports: [ShellComponent]

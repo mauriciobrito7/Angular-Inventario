@@ -3,25 +3,12 @@ $light:300;
 $normal:400;
 //Gutter
 $gutter:1em;
-@font-face {
-   font-family: Jaapokki;
-   font-style: normal;
-   font-weight: $normal;
-   src: url('~/../fonts/Jaapokkisubtract-Regular.otf');
-}
-//para la marca
 
-@import url('https://fonts.googleapis.com/css?family=Fugaz+One');
-
+@import url('https://fonts.googleapis.com/css?family=Fugaz+One|Montserrat');
 
 //Montserrat para los textos
-@font-face {
-   font-family: Montserrat;
-   font-style: normal;
-   font-weight: $normal;
-   src: url('~/../fonts/Montserrat-Regular.ttf');
-}
 $font-text:'Montserrat';
+// Fugaz one para la marca
 $font-branding:'Fugaz One', cursive;
 
 //Mixin para media queries
