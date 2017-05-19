@@ -6,7 +6,7 @@ import { MainContentComponent } from './shell/main-content/main-content.componen
 import { Routes, RouterModule } from '@angular/router';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { AngularFireModule } from 'angularfire2';
-
+import 'hammerjs';
 export const firebaseConfig = {
     apiKey: "AIzaSyAjh3khnudY3_L_egDbauO06yOL9mCfXbk",
     authDomain: "businessapp-e8c0b.firebaseapp.com",
