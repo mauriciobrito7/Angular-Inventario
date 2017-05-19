@@ -4,7 +4,7 @@ import { ShellComponent } from './shell/shell.component';
 import { TopBarComponent } from './shell/top-bar/top-bar.component';
 import { MainContentComponent } from './shell/main-content/main-content.component';
 import { Routes, RouterModule } from '@angular/router';
-
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { AngularFireModule } from 'angularfire2';
 
 export const firebaseConfig = {
@@ -32,7 +32,8 @@ const routes: Routes = [
   imports: [
     CommonModule,
     RouterModule.forRoot(routes),
-    AngularFireModule.initializeApp(firebaseConfig)
+    AngularFireModule.initializeApp(firebaseConfig),
+    BrowserAnimationsModule
   ],
   declarations: [ShellComponent, TopBarComponent, MainContentComponent],
   exports: [ShellComponent]

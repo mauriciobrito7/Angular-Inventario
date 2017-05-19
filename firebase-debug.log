@@ -1,0 +1,27 @@
+[debug] ----------------------------------------------------------------------
+[debug] Command:      C:\Program Files\nodejs\node.exe C:\Users\Mauricio\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] CLI Version:  3.8.0
+[debug] Platform:     win32
+[debug] Node Version: v7.5.0
+[debug] Time:         Fri May 19 2017 14:09:14 GMT-0400 (Hora estándar de Venezuela)
+[debug] ----------------------------------------------------------------------
+[debug] 
+[debug] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/businessapp-e8c0b  
+ Fri May 19 2017 14:09:14 GMT-0400 (Hora estándar de Venezuela)
+[debug] <<< HTTP RESPONSE 200
+[debug] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/businessapp-e8c0b/tokens  
+ Fri May 19 2017 14:09:16 GMT-0400 (Hora estándar de Venezuela)
+[debug] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\Mauricio\Documents\Github\inventario\inventario'...
+[info] 
+[debug] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/businessapp-e8c0b  
+ Fri May 19 2017 14:09:16 GMT-0400 (Hora estándar de Venezuela)
+[debug] <<< HTTP RESPONSE 200
+[debug] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/672216814772/clients/_:getWebAppConfig  
+ Fri May 19 2017 14:09:18 GMT-0400 (Hora estándar de Venezuela)
+[debug] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: dist
+[info] +  hosting: Local server: http://localhost:5000
+
