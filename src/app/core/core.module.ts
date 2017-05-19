@@ -9,6 +9,7 @@ import { AngularFireModule } from 'angularfire2';
 import { MaterialModule } from '@angular/material';
 import 'hammerjs';
 import { FooterComponent } from './shell/footer/footer.component';
+import { PageNotFoundComponent } from './shell/page-not-found/page-not-found.component';
 export const firebaseConfig = {
     apiKey: "AIzaSyAjh3khnudY3_L_egDbauO06yOL9mCfXbk",
     authDomain: "businessapp-e8c0b.firebaseapp.com",
@@ -38,7 +39,7 @@ const routes: Routes = [
     MaterialModule,
     BrowserAnimationsModule
   ],
-  declarations: [ShellComponent, TopBarComponent, MainContentComponent, FooterComponent],
+  declarations: [ShellComponent, TopBarComponent, MainContentComponent, FooterComponent, PageNotFoundComponent],
   exports: [ShellComponent]
 })
 export class CoreModule { }

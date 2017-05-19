@@ -14,12 +14,13 @@
     @include box_shadow(2);
     &-branding{
         font-family: $font-branding;
+        font-size: $gutter *1.2;
         color: color(white);
+        @include desde($medium){
+            font-size: $gutter *1.5;
+        }
     }
-    @include desde($small){
-        font-size: 1.3em;
-    }
-    @include desde($large){
-        font-size: 1.5em;
-    }
+}
+.btn-menu{
+    border: 0.5px solid color(background);
 }

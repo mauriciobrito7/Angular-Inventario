@@ -2,7 +2,7 @@
 
 footer{
     width: 100%;
-    height: $gutter * 3;
+    height: $gutter * 4;
     padding: $gutter;
     background: color(black);
     display: flex;
@@ -14,5 +14,6 @@ footer{
         -webkit-background-clip: text;
         color: transparent;
         font-family: $font-branding;
+        font-size: $gutter * 1.2;
     }
 }
