@@ -6,7 +6,9 @@ import { MainContentComponent } from './shell/main-content/main-content.componen
 import { Routes, RouterModule } from '@angular/router';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { AngularFireModule } from 'angularfire2';
+import { MaterialModule } from '@angular/material';
 import 'hammerjs';
+import { FooterComponent } from './shell/footer/footer.component';
 export const firebaseConfig = {
     apiKey: "AIzaSyAjh3khnudY3_L_egDbauO06yOL9mCfXbk",
     authDomain: "businessapp-e8c0b.firebaseapp.com",
@@ -33,9 +35,10 @@ const routes: Routes = [
     CommonModule,
     RouterModule.forRoot(routes),
     AngularFireModule.initializeApp(firebaseConfig),
+    MaterialModule,
     BrowserAnimationsModule
   ],
-  declarations: [ShellComponent, TopBarComponent, MainContentComponent],
+  declarations: [ShellComponent, TopBarComponent, MainContentComponent, FooterComponent],
   exports: [ShellComponent]
 })
 export class CoreModule { }

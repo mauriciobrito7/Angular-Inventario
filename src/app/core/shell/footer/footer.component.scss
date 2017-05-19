@@ -1,0 +1,18 @@
+@import '~assets/scss/_config';
+
+footer{
+    width: 100%;
+    height: $gutter * 3;
+    padding: $gutter;
+    background: color(black);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: color(white);
+    .#{&}-app-branding{
+        background: linear-gradient(to right,color(seaBlue1),color(seaBlue2));
+        -webkit-background-clip: text;
+        color: transparent;
+        font-family: $font-branding;
+    }
+}

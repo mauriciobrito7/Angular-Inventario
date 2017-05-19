@@ -45,7 +45,8 @@ $colors:(
 	seaBlue2:#4e4376,
 	white: #ffffff,
 	black: #191919,
-	grey: grey
+	grey: grey,
+    green:#03C9A9
 );
 
 @function color($color){
@@ -65,4 +66,9 @@ $colors:(
         box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
     }
 
+}
+
+.btn{
+    font-family: $font-text;
+    font-size: $gutter;
 }

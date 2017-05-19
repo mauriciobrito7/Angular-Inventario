@@ -1,5 +1,13 @@
 @import '~assets/scss/_config';
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
 main{
-    max-width: $large;
-    margin: $gutter auto !important;
+    max-width: $medium;
+    margin: $gutter*4 auto !important;
+}
+app-footer{
+        margin-top: auto !important;
 }

@@ -1,19 +1,19 @@
 @import '~assets/scss/_config';
-.title{
-    display: block;
-    text-align: center;
-    margin:$gutter 0 !important;
-    span{
-         border-bottom: 2px solid color(seaBlue1);
-    }
-}
 .main{
     display: flex;
     width: 100%;
     align-items: center;
+    
+    &-title{
+        display: block;
+        text-align: center;
+        margin:$gutter 0 !important;
+        span{
+            border-bottom: 2px solid color(seaBlue1);
+        }
+    }
 }
 .form{
-    margin: 0 auto !important;
     max-width: $small;
     @include box_shadow(2);
     
@@ -54,5 +54,8 @@
         width: 100%;
         border:0;
         margin: 0 auto !important;
+    }
+    .answer{
+        color: color(green);
     }
 }

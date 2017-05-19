@@ -1,6 +1,9 @@
 <nav class="nav-bar">
-  <a routerLink="/calculadora"><div class="nav-bar-branding">Businessapp</div></a>
-  <div class="nav-bar-menu">
-    menu
-  </div>
+  <a routerLink="calculadora"><div class="nav-bar-branding">Businessapp</div></a>
+  <button md-button [mdMenuTriggerFor]="menu" class="btn"><md-icon> menu </md-icon></button>
 </nav>
+<md-menu #menu="mdMenu" class="mdMenu">
+    <a routerLink=""><button md-menu-item class="btn mdMenu-item">Home</button></a>
+    <a routerLink="calculadora"><button md-menu-item class="btn mdMenu-item">Calculadora</button></a>
+</md-menu>
+

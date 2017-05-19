@@ -2,20 +2,22 @@
 
 .nav-bar{
     width: 100%;
-    height: 3em;
+    height: $gutter * 3;
     padding: $gutter;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background: linear-gradient(to right,color(seaBlue1), color(seaBlue2));
     color: color(white);
+    position: fixed;
+    z-index: 1000;
     @include box_shadow(2);
     &-branding{
         font-family: $font-branding;
         color: color(white);
     }
     @include desde($small){
-        font-size: 1.3em;        
+        font-size: 1.3em;
     }
     @include desde($large){
         font-size: 1.5em;
