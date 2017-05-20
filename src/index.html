@@ -8,9 +8,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="/assets/img/BusinessappIcon.png">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="manifest" href="manifest.json">
 </head>
 <body>
   <app-shell>Loading...</app-shell>
   <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/service-worker.js').then(function(registration) {
+        // Registration was successful
+        console.log('ServiceWorker registration successful with scope: ', registration.scope);
+      }).catch(function(err) {
+        // registration failed :(
+        console.log('ServiceWorker registration failed: ', err);
+      });
+    }
+  </script>
 </body>
 </html>
