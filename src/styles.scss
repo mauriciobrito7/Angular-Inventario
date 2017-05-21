@@ -59,7 +59,18 @@ li{
 
 label, input, textarea, article, details, figcaption, figure, footer, header, main, menu, nav, section, summary{
 	display:block;
+    font-family: $font-text;
+    font-size: $gutter;
 }
+
+input{
+    border-radius: 2px;
+    background: color(background);
+    color: color(white);
+    border: 1px solid color(grey);
+    padding: $gutter * 0.3;
+}
+
 b, strong { font-weight: bold;}
 
 table{ border-collapse: collapse; }

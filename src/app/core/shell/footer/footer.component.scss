@@ -10,7 +10,7 @@ footer{
     justify-content: space-around;
     color: color(white);
     .#{&}-app-branding{
-        background: linear-gradient(to right,color(seaBlue1),color(seaBlue2));
+        background: linear-gradient(to right,color(blueGradient1),color(blueGradient2));
         -webkit-background-clip: text;
         color: transparent;
         font-family: $font-branding;

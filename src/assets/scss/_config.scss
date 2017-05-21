@@ -40,13 +40,16 @@ $h1-size: $font-size * 1.7;
 
 //Colores
 $colors:(
-    background:#f0f0f0,
-	seaBlue1:#2b5876,
-	seaBlue2:#4e4376,
-	white: #ffffff,
-	black: #191919,
-	grey: grey,
-    green:#03C9A9
+    background:#212121,
+    blueGradient1:#4776e6,
+    blueGradient2:#0072ff,
+    white: #ffffff,
+    black: #191919,
+    card: #2f2f31,
+    grey: #cccccc,
+    green:#2ECC71,
+    orange: #F89406,
+    purple: #9A12B3
 );
 
 @function color($color){
