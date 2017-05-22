@@ -1,13 +1,12 @@
 @import '~assets/scss/_config';
-
 .main{
-    background: color(card);
-    max-width: $medium;
-    @include box_shadow(2);
+    max-width: $large;
     display: flex;
     flex-wrap: wrap;
+    background: color(card);
+    @include box_shadow(2);
     border-top: 1px solid color(grey);
-    border-bottom: 1px solid color(grey);
+    border-bottom: 2px solid color(grey);
     @include desde($medium){
         border: 1px solid color(grey);
     }

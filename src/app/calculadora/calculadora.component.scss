@@ -4,6 +4,13 @@
     flex-wrap: wrap;
     align-items: center;
     max-width: $small;
+    background: color(card);
+    @include box_shadow(2);
+    border-top: 1px solid color(grey);
+    border-bottom: 2px solid color(grey);
+    @include desde($medium){
+        border: 1px solid color(grey);
+    }
     &-title{
         display: block;
         text-align: center;
@@ -15,18 +22,11 @@
     }
 }
 .form{
-    @include box_shadow(2);
-    border-top: 1px solid color(grey);
-    border-bottom: 2px solid color(grey);
-    @include desde($medium){
-        border: 1px solid color(grey);
-    }
     &-group{
         width: 100%;
         display: flex;
         flex-wrap: wrap;
         padding: $gutter;
-        background: color(card);
     }
     label, input{
         margin: $gutter*0.7 auto !important;

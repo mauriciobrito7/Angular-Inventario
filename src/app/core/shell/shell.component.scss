@@ -6,6 +6,7 @@ body{
 }
 main{
     margin: $gutter*4 auto !important;
+    max-width: $large;
 }
 app-footer{
         margin-top: auto !important;

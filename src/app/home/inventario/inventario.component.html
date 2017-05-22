@@ -4,94 +4,52 @@
     <input class="inventory-input" type="search">
   </div>
   <div class="inventory-table">
-    <div class="inventory-table__info"><span>Envios: 20000</span><span>Dolar: 5800</span></div>
+    <div class="inventory-table__info">
+      <span class="inventory-table__info__send">Envios: 20000</span>
+      <span class="inventory-table__info__dolar">Dolar: 5800<button md-icon-button [mdMenuTriggerFor]="dolar"><md-icon>more_vert</md-icon></button>
+              <md-menu #dolar="mdMenu">
+                <button md-menu-item>Editar</button>
+              </md-menu></span>
+    </div>
     <div class="table-container">
       <table>
         <thead>
           <tr class="inventory-table__header">
-            <td class="inventory-table__title">#ID</td>
-            <td class="inventory-table__title">Nombre</td>
-            <td class="inventory-table__title">Existencia</td>
-            <td class="inventory-table__title">Precio Bsf</td>
-            <td class="inventory-table__title">Precio dolares </td>
-            <td class="inventory-table__title"></td>            
+            <th class="inventory-table__title">#ID</th>
+            <th class="inventory-table__title">Nombre</th>
+            <th class="inventory-table__title">Existencia</th>
+            <th class="inventory-table__title">Precio Bsf</th>
+            <th class="inventory-table__title">Precio dolares </th>
           </tr>
         </thead>
         <tbody>
-          <tr class="inventory-table__row">
+          <tr class="inventory-table__row" routerLink="calculadora">
             <td class="inventory-table__item">1</td>
             <td class="inventory-table__item"> Blu R1 HD</td>
             <td class="inventory-table__item">1</td>
             <td class="inventory-table__item">500000</td>
             <td class="inventory-table__item">64</td>
-            <td class="inventory-table__item">
-              <button md-icon-button [mdMenuTriggerFor]="menu"><md-icon>more_vert</md-icon></button>
-              <md-menu #menu="mdMenu">
-                <button md-menu-item>Vender producto</button>
-                <button md-menu-item>Hacer pedido</button>
-                <button md-menu-item>Eliminar</button>
-              </md-menu>
-            </td>
           </tr>
-          <tr class="inventory-table__row">
+          <tr class="inventory-table__row" routerLink="calculadora">
             <td class="inventory-table__item">1</td>
             <td class="inventory-table__item"> Blu R1 HD</td>
             <td class="inventory-table__item">1</td>
             <td class="inventory-table__item">500000</td>
             <td class="inventory-table__item">64</td>
-            <td class="inventory-table__item">
-              <button md-icon-button [mdMenuTriggerFor]="menu"><md-icon>more_vert</md-icon></button>
-              <md-menu #menu="mdMenu">
-                <button md-menu-item>Vender producto</button>
-                <button md-menu-item>Hacer pedido</button>
-                <button md-menu-item>Eliminar</button>
-              </md-menu>
-            </td>
           </tr>
-          <tr class="inventory-table__row">
+          <tr class="inventory-table__row" routerLink="calculadora">
             <td class="inventory-table__item">1</td>
             <td class="inventory-table__item"> Blu R1 HD</td>
             <td class="inventory-table__item">1</td>
             <td class="inventory-table__item">500000</td>
             <td class="inventory-table__item">64</td>
-            <td class="inventory-table__item">
-              <button md-icon-button [mdMenuTriggerFor]="menu"><md-icon>more_vert</md-icon></button>
-              <md-menu #menu="mdMenu">
-                <button md-menu-item>Vender producto</button>
-                <button md-menu-item>Hacer pedido</button>
-                <button md-menu-item>Eliminar</button>
-              </md-menu>
-            </td>
           </tr>
-          <tr class="inventory-table__row">
+          <tr class="inventory-table__row" routerLink="calculadora">
             <td class="inventory-table__item">1</td>
             <td class="inventory-table__item"> Blu R1 HD</td>
             <td class="inventory-table__item">1</td>
             <td class="inventory-table__item">500000</td>
             <td class="inventory-table__item">64</td>
-            <td class="inventory-table__item">
-              <button md-icon-button [mdMenuTriggerFor]="menu"><md-icon>more_vert</md-icon></button>
-              <md-menu #menu="mdMenu">
-                <button md-menu-item>Vender producto</button>
-                <button md-menu-item>Hacer pedido</button>
-                <button md-menu-item>Eliminar</button>
-              </md-menu>
-            </td>
-          </tr>
-          <tr class="inventory-table__row">
-            <td class="inventory-table__item">1</td>
-            <td class="inventory-table__item"> Blu R1 HD</td>
-            <td class="inventory-table__item">1</td>
-            <td class="inventory-table__item">500000</td>
-            <td class="inventory-table__item">64</td>
-            <td class="inventory-table__item">
-              <button md-icon-button [mdMenuTriggerFor]="menu"><md-icon>more_vert</md-icon></button>
-              <md-menu #menu="mdMenu">
-                <button md-menu-item>Vender producto</button>
-                <button md-menu-item>Hacer pedido</button>
-                <button md-menu-item>Eliminar</button>
-              </md-menu>
-            </td>
           </tr>
         </tbody>
       </table>
