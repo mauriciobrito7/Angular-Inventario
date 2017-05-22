@@ -1,9 +1,9 @@
 @import '~assets/scss/_config';
 .main{
     display: flex;
-    width: 100%;
+    flex-wrap: wrap;
     align-items: center;
-    
+    max-width: $small;
     &-title{
         display: block;
         text-align: center;
@@ -15,34 +15,28 @@
     }
 }
 .form{
-    max-width: $small;
     @include box_shadow(2);
     border-top: 1px solid color(grey);
     border-bottom: 2px solid color(grey);
+    @include desde($medium){
+        border: 1px solid color(grey);
+    }
     &-group{
         width: 100%;
         display: flex;
         flex-wrap: wrap;
         padding: $gutter;
-        background: color(black);
+        background: color(card);
     }
     label, input{
         margin: $gutter*0.7 auto !important;
-        width: 65%;
-        font-family: $font-text;
-        font-size: $gutter;
+        width: 55%;
     }
     label{
-        text-align: center;
+        text-align: left;
         color: color(grey);
     }
-    input{
-        border-radius: 2px;
-        background: color(background);
-        color: color(white);
-        border: 1px solid color(grey);
-        padding: $gutter * 0.3;
-    }
+
     input:focus{
         outline-color:color(orange);
     }
@@ -52,7 +46,7 @@
         align-items: center;
         background: color(orange);
         color: color(white);
-        padding: $gutter*0.5;
+        padding: $gutter;
         font-family: $font-text;
         width: 100%;
         border:0;

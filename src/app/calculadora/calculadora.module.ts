@@ -5,7 +5,8 @@ import { Routes, RouterModule } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CalculatorPricePipe } from './../pipes/calculator-price.pipe';
 import { CalculatorEarnPipe } from './../pipes/calculator-earn.pipe';
-
+import { MaterialModule } from '@angular/material';
+import 'hammerjs';
 
 const routes: Routes = [
   {
@@ -19,6 +20,7 @@ const routes: Routes = [
     CommonModule,
     RouterModule.forChild(routes),
     FormsModule,
+    MaterialModule,
     ReactiveFormsModule
   ],
   declarations: [

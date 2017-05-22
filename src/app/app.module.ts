@@ -13,7 +13,7 @@ import { ShellComponent } from './core/shell/shell.component';
     BrowserModule,
     FormsModule,
     HttpModule,
-    CoreModule
+    CoreModule,
   ],
   providers: [],
   bootstrap: [ShellComponent]

@@ -1,6 +1,16 @@
 @import '~assets/scss/_config';
 
 .main{
+    background: color(card);
+    max-width: $medium;
+    @include box_shadow(2);
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 1px solid color(grey);
+    border-bottom: 1px solid color(grey);
+    @include desde($medium){
+        border: 1px solid color(grey);
+    }
     &-title{
         display: block;
         text-align: center;

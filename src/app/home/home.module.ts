@@ -2,7 +2,9 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home.component';
 import { Routes, RouterModule } from '@angular/router';
-
+import { InventarioComponent } from './inventario/inventario.component';
+import { MaterialModule } from '@angular/material';
+import 'hammerjs';
 const routes: Routes = [
   {
     path:'', component:HomeComponent
@@ -15,8 +17,9 @@ const routes: Routes = [
 @NgModule({
   imports: [
     CommonModule,
+    MaterialModule,
     RouterModule.forChild(routes)
   ],
-  declarations: [HomeComponent]
+  declarations: [HomeComponent, InventarioComponent]
 })
 export class HomeModule { }

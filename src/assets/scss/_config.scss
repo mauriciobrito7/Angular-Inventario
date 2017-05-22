@@ -74,4 +74,9 @@ $colors:(
 .btn{
     font-family: $font-text;
     font-size: $gutter;
+    border-radius: 2px;
+}
+.btn-blue{
+    background: color(blueGradient2);
+    color: color(white);
 }

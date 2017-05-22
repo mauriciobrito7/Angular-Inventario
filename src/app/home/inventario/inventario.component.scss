@@ -1,0 +1,53 @@
+@import '~assets/scss/_config';
+
+.inventory{
+    padding: $gutter;
+    &-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: $gutter !important;
+    }
+    &-input{
+        display: inline-block;
+        border-radius: 9px !important;
+        padding: 0 !important;
+    }
+    .table-container{
+        overflow: auto;
+    }
+    table{
+        min-width: $small;
+    }
+    &-table{
+        background: color(black);
+        border: 2px solid color(grey);
+        &__info{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: $gutter;
+            color:color(grey);
+        }
+        &__header{
+            background: color(blueGradient2);
+            padding: $gutter !important;
+            color: color(white);
+        }
+        &__title{
+            padding: $gutter;
+            text-align: center;
+        }
+        &__row{
+            text-align: center;
+            color: color(white);
+        }
+        &__row:hover{
+            background: color(blueGradient2);
+        }
+        &__item{
+            padding: $gutter * 1.5;
+            border-bottom: solid 1px rgba(255,255,255,0.1);
+        }
+    }
+}
