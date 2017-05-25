@@ -17,6 +17,31 @@ $font-branding:'Fugaz One', cursive;
 		@content;
 	}
 }
+
+@mixin center {
+  margin-left : auto !important;
+  margin-right : auto !important;
+}
+
+@mixin card{
+    display: flex;
+    flex-wrap: wrap;
+    background: color(card);
+    @include box_shadow(2);
+    border-top: 1px solid color(grey);
+    border-bottom: 2px solid color(grey);
+    @include desde($medium){
+        border: 1px solid color(grey);
+    }
+}
+
+@mixin card-content{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: $gutter;
+}
+
 //Breakpoints
 $small:480px;
 $medium:768px;

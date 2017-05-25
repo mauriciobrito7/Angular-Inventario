@@ -1,58 +1,64 @@
 <div class="inventory">
-  <div class="inventory-header">
-    <button md-button class="inventory-button btn btn-blue">Pedidos</button>
-    <input class="inventory-input" type="search">
-  </div>
-  <div class="inventory-table">
-    <div class="inventory-table__info">
-      <span class="inventory-table__info__send">Envios: 20000</span>
-      <span class="inventory-table__info__dolar">Dolar: 5800<button md-icon-button [mdMenuTriggerFor]="dolar"><md-icon>more_vert</md-icon></button>
-              <md-menu #dolar="mdMenu">
-                <button md-menu-item>Editar</button>
-              </md-menu></span>
+    <div class="inventory-header">
+      <button md-button class="orders">Pedidos</button>
+      <input type="search" class="filter">
+    </div>
+    <div class="inventory-table">
+      <div class="inventory-table__info">
+        <div class="shipments">Envios: 20000</div>
+        <div class="dolar">Dolar: 5800 <md-icon>more_vert</md-icon></div>
+      </div>
     </div>
     <div class="table-container">
-      <table>
-        <thead>
-          <tr class="inventory-table__header">
-            <th class="inventory-table__title">#ID</th>
-            <th class="inventory-table__title">Nombre</th>
-            <th class="inventory-table__title">Existencia</th>
-            <th class="inventory-table__title">Precio Bsf</th>
-            <th class="inventory-table__title">Precio dolares </th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr class="inventory-table__row" routerLink="calculadora">
-            <td class="inventory-table__item">1</td>
-            <td class="inventory-table__item"> Blu R1 HD</td>
-            <td class="inventory-table__item">1</td>
-            <td class="inventory-table__item">500000</td>
-            <td class="inventory-table__item">64</td>
-          </tr>
-          <tr class="inventory-table__row" routerLink="calculadora">
-            <td class="inventory-table__item">1</td>
-            <td class="inventory-table__item"> Blu R1 HD</td>
-            <td class="inventory-table__item">1</td>
-            <td class="inventory-table__item">500000</td>
-            <td class="inventory-table__item">64</td>
-          </tr>
-          <tr class="inventory-table__row" routerLink="calculadora">
-            <td class="inventory-table__item">1</td>
-            <td class="inventory-table__item"> Blu R1 HD</td>
-            <td class="inventory-table__item">1</td>
-            <td class="inventory-table__item">500000</td>
-            <td class="inventory-table__item">64</td>
-          </tr>
-          <tr class="inventory-table__row" routerLink="calculadora">
-            <td class="inventory-table__item">1</td>
-            <td class="inventory-table__item"> Blu R1 HD</td>
-            <td class="inventory-table__item">1</td>
-            <td class="inventory-table__item">500000</td>
-            <td class="inventory-table__item">64</td>
-          </tr>
-        </tbody>
+      <table class="table-rwd">
+        <tr>
+          <th></th>
+          <th>#ID</th>
+          <th>Nombre</th>
+          <th>Existencia</th>
+          <th>Precio Bsf</th>
+          <th>Precio Dolar $</th>
+        </tr>
+        <tr>
+          <td>#ID</td>
+          <td>100</td>
+          <td>200</td>
+          <td>300</td>
+          <td>400</td>
+          <td>500</td>
+        </tr>
+        <tr>
+          <td>#ID</td>
+          <td>200</td>
+          <td>400</td>
+          <td>600</td>
+          <td>800</td>
+          <td>1000</td>
+        </tr>
+        <tr>
+          <td>#ID</td>
+          <td>300</td>
+          <td>600</td>
+          <td>900</td>
+          <td>1200</td>
+          <td>1500</td>
+        </tr>
+        <tr>
+          <td>#ID</td>
+          <td>400</td>
+          <td>800</td>
+          <td>1200</td>
+          <td>1600</td>
+          <td>2000</td>
+        </tr>
+        <tr>
+          <td>#ID</td>
+          <td>500</td>
+          <td>1000</td>
+          <td>1500</td>
+          <td>2000</td>
+          <td>2500</td>
+        </tr>
       </table>
     </div>
-  </div>
 </div>

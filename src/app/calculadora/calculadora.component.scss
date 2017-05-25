@@ -1,16 +1,7 @@
 @import '~assets/scss/_config';
 .main{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    max-width: $small;
-    background: color(card);
-    @include box_shadow(2);
-    border-top: 1px solid color(grey);
-    border-bottom: 2px solid color(grey);
-    @include desde($medium){
-        border: 1px solid color(grey);
-    }
+    @include card;
+    max-width: $medium;
     &-title{
         display: block;
         text-align: center;
@@ -23,14 +14,15 @@
 }
 .form{
     &-group{
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        padding: $gutter;
+        @include card-content;
+        justify-content: center;
     }
     label, input{
-        margin: $gutter*0.7 auto !important;
+        margin: $gutter*0.7 0 !important;
         width: 55%;
+        @include desde($medium){
+            width: 35%;
+        }
     }
     label{
         text-align: left;
