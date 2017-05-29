@@ -1,3 +1,4 @@
+import { CalculadoraComponent } from '../calculadora/calculadora.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ShellComponent } from './shell/shell.component';
@@ -10,6 +11,10 @@ import { MaterialModule } from '@angular/material';
 import 'hammerjs';
 import { FooterComponent } from './shell/footer/footer.component';
 import { PageNotFoundComponent } from './shell/page-not-found/page-not-found.component';
+import { ProductoComponent } from './../home/producto/producto.component';
+import { ProductosService } from './../services/productos.service';
+
+
 export const firebaseConfig = {
     apiKey: "AIzaSyAjh3khnudY3_L_egDbauO06yOL9mCfXbk",
     authDomain: "businessapp-e8c0b.firebaseapp.com",
@@ -22,6 +27,9 @@ export const firebaseConfig = {
 const routes: Routes = [
   {
     path:'', loadChildren:'./../home/home.module#HomeModule'
+  },
+  {
+    path:'producto/:id', component:ProductoComponent
   },
   {
     path:'calculadora', loadChildren:'./../calculadora/calculadora.module#CalculadoraModule'
@@ -39,7 +47,8 @@ const routes: Routes = [
     MaterialModule,
     BrowserAnimationsModule
   ],
-  declarations: [ShellComponent, TopBarComponent, MainContentComponent, FooterComponent, PageNotFoundComponent],
+  declarations: [ShellComponent, TopBarComponent, MainContentComponent, FooterComponent, PageNotFoundComponent, ProductoComponent],
+  providers:[ProductosService],
   exports: [ShellComponent]
 })
 export class CoreModule { }

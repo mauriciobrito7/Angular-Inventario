@@ -5,10 +5,12 @@ import { Routes, RouterModule } from '@angular/router';
 import { MaterialModule } from '@angular/material';
 import 'hammerjs';
 import { InventarioComponent } from './inventario/inventario.component';
+
 const routes: Routes = [
   {
-    path:'', component:HomeComponent
+    path:'', component:HomeComponent,
   },
+
   {
     path:'*', component:HomeComponent
   }
@@ -20,6 +22,7 @@ const routes: Routes = [
     MaterialModule,
     RouterModule.forChild(routes)
   ],
-  declarations: [HomeComponent, InventarioComponent]
+  declarations: [HomeComponent, InventarioComponent],
+  providers:[]
 })
 export class HomeModule { }

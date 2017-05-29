@@ -1,20 +1,17 @@
 @import '~assets/scss/_config';
 .inventory{
     @include card-content;
+
     &-header{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        .orders{
-            background: color(blueGradient2);
-            color:white;
-        }
         .filter{
             border-radius: 9px;
             background: color(background);
         }
     }
-    &-header,&-table, .table-container , .table-rwd{
+    &-header,&-table{
         width: 100%;
     }
     &-table__info{
@@ -31,6 +28,14 @@
         .dolar{
             justify-content: flex-end;
         }
+    }
+
+    .add-button{
+        display: flex;
+        width: 100%;
+        justify-content: flex-end;
+        margin-top: $gutter !important;
+        margin-bottom: $gutter !important;
     }
 
 }

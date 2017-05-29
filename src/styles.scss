@@ -83,8 +83,6 @@ b, strong { font-weight: bold;}
   border: 1px solid rgba(color(grey),.5);
   color:color(white);
   border-collapse: collapse;
-  @include center;
-
   td, th {
     padding : $gutter * 0.7;
     border-bottom: 1px solid rgba(color(grey),.5);
@@ -124,22 +122,24 @@ b, strong { font-weight: bold;}
 }
 
 // Truco
-$width: 900px;
+$width: 800px;
 $frozen-width: 8em;
 
 .table-container {
   overflow-x: auto !important;
+
 }
 
 .table-rwd {
   min-width: $width;
+  display: block;
   td:first-child {
     position : absolute;
     background : color(black);
     color:color(white);
     border: 0;
     width : $frozen-width;
-    text-align: left;
+    text-align: center;
   }
   th:first-child {
     width : $frozen-width;

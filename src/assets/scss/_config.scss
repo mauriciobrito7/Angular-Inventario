@@ -40,6 +40,7 @@ $font-branding:'Fugaz One', cursive;
     display: flex;
     flex-wrap: wrap;
     padding: $gutter;
+    background: color(card);
 }
 
 //Breakpoints
@@ -74,7 +75,8 @@ $colors:(
     grey: #cccccc,
     green:#2ECC71,
     orange: #F89406,
-    purple: #9A12B3
+    purple: #9A12B3,
+    red: #f22613
 );
 
 @function color($color){
@@ -96,12 +98,24 @@ $colors:(
 
 }
 
-.btn{
+.btn, .btn-blue, .btn-red, .btn-green{
     font-family: $font-text;
     font-size: $gutter;
     border-radius: 2px;
 }
+.btn-blue, .btn-red, .btn-green, .btn-float{
+    color: white;
+}
 .btn-blue{
     background: color(blueGradient2);
-    color: color(white);
+}
+.btn-red{
+    background: color(red);
+}
+.btn-green{
+    background: color(green);
+}
+.btn-float{
+    background: color(blueGradient1) !important;
+    display: block;
 }

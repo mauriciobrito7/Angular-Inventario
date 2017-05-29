@@ -1,6 +1,6 @@
 <div class="inventory">
     <div class="inventory-header">
-      <button md-button class="orders">Pedidos</button>
+      <button md-button class="orders btn-blue">Pedidos</button>
       <input type="search" class="filter">
     </div>
     <div class="inventory-table">
@@ -13,52 +13,21 @@
       <table class="table-rwd">
         <tr>
           <th></th>
-          <th>#ID</th>
           <th>Nombre</th>
           <th>Existencia</th>
           <th>Precio Bsf</th>
           <th>Precio Dolar $</th>
         </tr>
-        <tr>
-          <td>#ID</td>
-          <td>100</td>
-          <td>200</td>
-          <td>300</td>
-          <td>400</td>
-          <td>500</td>
-        </tr>
-        <tr>
-          <td>#ID</td>
-          <td>200</td>
-          <td>400</td>
-          <td>600</td>
-          <td>800</td>
-          <td>1000</td>
-        </tr>
-        <tr>
-          <td>#ID</td>
-          <td>300</td>
-          <td>600</td>
-          <td>900</td>
-          <td>1200</td>
-          <td>1500</td>
-        </tr>
-        <tr>
-          <td>#ID</td>
-          <td>400</td>
-          <td>800</td>
-          <td>1200</td>
-          <td>1600</td>
-          <td>2000</td>
-        </tr>
-        <tr>
-          <td>#ID</td>
-          <td>500</td>
-          <td>1000</td>
-          <td>1500</td>
-          <td>2000</td>
-          <td>2500</td>
+        <tr *ngFor="let product of products" routerLink="producto/{{product.id}}">
+          <td>#{{product.id}}</td>
+          <td>{{product.title}}</td>
+          <td>{{product.existence}}</td>
+          <td>{{product.priceBsf}}</td>
+          <td>{{product.priceDolar}}</td>
         </tr>
       </table>
+    </div>
+    <div class="add-button">
+      <button md-mini-fab class=" btn-float" routerLink="/"><md-icon>add</md-icon></button>
     </div>
 </div>
