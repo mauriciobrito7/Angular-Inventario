@@ -8,6 +8,7 @@ import { IProduct } from './../../services/productos.interface';
 })
 export class InventarioComponent implements OnInit {
   products : IProduct[];
+  
   constructor(productsService: ProductosService) {
     this.products = productsService.getProducts();
    }

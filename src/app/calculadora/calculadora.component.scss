@@ -3,13 +3,13 @@
     @include card;
     max-width: $medium;
     &-title{
-        display: block;
-        text-align: center;
-        color: color(grey);
-        margin:$gutter 0 !important;
-        span{
-            border-bottom: 2px solid color(orange);
-        }
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: color(orange);
+        color: color(white);
+        height: $gutter *3;
+        margin-top:$gutter !important;
     }
 }
 .form{

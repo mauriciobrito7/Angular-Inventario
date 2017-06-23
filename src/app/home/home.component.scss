@@ -2,12 +2,12 @@
 .main{
     @include card;
     &-title{
-        display: block;
-        text-align: center;
-        color: color(grey);
-        margin:$gutter 0 !important;
-        span{
-            border-bottom: 2px solid color(blueGradient2);
-        }
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: $gutter*3;
+        color: color(white);
+        background: color(blueGradient2);
+        margin-top:$gutter !important;
     }
 }

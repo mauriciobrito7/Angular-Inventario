@@ -28,11 +28,6 @@ $font-branding:'Fugaz One', cursive;
     flex-wrap: wrap;
     background: color(card);
     @include box_shadow(2);
-    border-top: 1px solid color(grey);
-    border-bottom: 2px solid color(grey);
-    @include desde($medium){
-        border: 1px solid color(grey);
-    }
 }
 
 @mixin card-content{
@@ -115,7 +110,7 @@ $colors:(
 .btn-green{
     background: color(green);
 }
-.btn-float{
-    background: color(blueGradient1) !important;
+.btn-float-blue{
+    background: color(blueGradient2) !important;
     display: block;
 }

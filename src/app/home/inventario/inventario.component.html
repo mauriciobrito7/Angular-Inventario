@@ -9,25 +9,27 @@
         <div class="dolar">Dolar: 5800 <md-icon>more_vert</md-icon></div>
       </div>
     </div>
-    <div class="table-container">
-      <table class="table-rwd">
+    <table>
+      <thead>
         <tr>
-          <th></th>
+          <th>Código</th>
           <th>Nombre</th>
           <th>Existencia</th>
           <th>Precio Bsf</th>
-          <th>Precio Dolar $</th>
+          <th>Precio Dolar</th>
         </tr>
+      </thead>
+      <tbody>
         <tr *ngFor="let product of products" routerLink="producto/{{product.id}}">
-          <td>#{{product.id}}</td>
-          <td>{{product.title}}</td>
-          <td>{{product.existence}}</td>
-          <td>{{product.priceBsf}}</td>
-          <td>{{product.priceDolar}}</td>
+          <td data-title="Código">#{{product.id}}</td>
+          <td data-title="Nombre">{{product.title}}</td>
+          <td data-title="Existencia">{{product.existence}}</td>
+          <td data-title="Precio Bsf">{{product.priceBsf}}</td>
+          <td data-title="Precio $">{{product.priceDolar}}</td>
         </tr>
-      </table>
-    </div>
+      </tbody>
+    </table>
     <div class="add-button">
-      <button md-mini-fab class=" btn-float" routerLink="/"><md-icon>add</md-icon></button>
+      <button md-mini-fab class=" btn-float-blue" routerLink="/"><md-icon>add</md-icon></button>
     </div>
 </div>
