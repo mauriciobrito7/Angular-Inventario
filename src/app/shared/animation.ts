@@ -6,13 +6,13 @@ export const slide: AnimationEntryMetadata =
         state('*',
             style({
                 opacity:1,
-                Transform:'translateX(0)'
+                transform:'translateX(0)'
             })
         ),
         transition(':enter',[
             style({
                 opacity:1,
-                transform:'trnaslateX(100%)'
+                transform:'translateX(100%)'
             }),
             animate('0.3s ease-in')
         ]),
@@ -23,3 +23,13 @@ export const slide: AnimationEntryMetadata =
             }))
         ])
     ]);
+
+export const shrinkOut: AnimationEntryMetadata = [
+  trigger('shrinkOut', [
+    state('in', style({height: '*'})),
+    transition('* => void', [
+      style({height: '*'}),
+      animate(250, style({height: 0}))
+    ])
+  ])
+]

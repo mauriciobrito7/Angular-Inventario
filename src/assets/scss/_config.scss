@@ -98,7 +98,7 @@ $colors:(
     font-size: $gutter;
     border-radius: 2px;
 }
-.btn-blue, .btn-red, .btn-green, .btn-float{
+.btn-blue, .btn-red, .btn-green, .btn-float-blue,.btn-float-green{
     color: white;
 }
 .btn-blue{
@@ -112,5 +112,9 @@ $colors:(
 }
 .btn-float-blue{
     background: color(blueGradient2) !important;
+    display: block;
+}
+.btn-float-green{
+    background: color(green) !important;
     display: block;
 }

@@ -4,21 +4,22 @@
 <main class="main">
     <div class="product">
       <div class="back">
-        <button md-mini-fab class="back-button btn-float" routerLink="/"><md-icon>arrow_back</md-icon></button>
+        <button md-icon-button class="back-button btn-float-green" routerLink="/"><md-icon>arrow_back</md-icon></button>
+        <button md-icon-button [mdMenuTriggerFor]="menu" class=" btn-float-green"><md-icon> more_vert</md-icon></button>
       </div>
+      <md-menu #menu="mdMenu" class="mdMenu">
+            <button md-menu-item >Vender</button>
+            <button md-menu-item >Hacer pedido</button>
+            <button md-menu-item >Eliminar</button>
+      </md-menu>
       <div class="product-info">
+        <h4 class="product-info__title">{{product.title}}</h4>
         <div class="product-info__img">
           <div class="img"></div>
         </div>
-        <h4 class="product-info__title">{{product.title}}</h4>
       </div>
       <div class="product-description">
         {{product.description}}
-      </div>
-      <div class="product-option">
-        <button md-button class="btn-green">Vender</button>
-        <button md-button class="btn-blue">Hacer pedidos</button>
-        <button md-button class="btn-red">Eliminar</button>
       </div>
     </div>
 </main>
