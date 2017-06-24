@@ -36,13 +36,22 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        background: color(orange);
         color: color(white);
         padding: $gutter;
         font-family: $font-text;
         width: 100%;
         border:0;
         margin: 0 auto !important;
+        .price, .earn{
+            padding: $gutter * 0.2;
+            border-radius: 2px;
+        }
+        .price{
+            background: color(orange);
+        }
+        .earn{
+            background: color(green);
+        }
     }
     .answer{
         color: color(green);

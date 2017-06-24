@@ -8,11 +8,11 @@ import { slide } from '../shared/animation';
   animations:[slide]
 })
 export class CalculadoraComponent implements OnInit {
-   precioDolares = 64;
-   precioDolarToday = 5000 ;
+   precioDolares = 60;
+   precioDolarToday = 8300 ;
    prime = 3;
-   porcentaje = 30;
-   envio = 20000;
+   porcentaje = 35;
+   envio = 21000;
   
   @HostBinding('@routeAnimation') routeAnimation = true;
   @HostBinding('style.display') dislay = 'block'; 
