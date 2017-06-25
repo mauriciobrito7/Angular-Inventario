@@ -5,6 +5,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CalculatorPricePipe } from './../pipes/calculator-price.pipe';
 import { CalculatorEarnPipe } from './../pipes/calculator-earn.pipe';
+import { CalculatorEarnForPricePipe } from './../pipes/calculator-earn-for-price.pipe';
 import { MaterialModule } from '@angular/material';
 import 'hammerjs';
 
@@ -26,7 +27,8 @@ const routes: Routes = [
   declarations: [
     CalculadoraComponent,
     CalculatorPricePipe,
-    CalculatorEarnPipe
+    CalculatorEarnPipe,
+    CalculatorEarnForPricePipe
     ]
 })
 export class CalculadoraModule { }

@@ -14,6 +14,14 @@
         <input  id="porcentaje" [(ngModel)]="porcentaje">
         <label for="envio">Costo de envio en Bsf:</label>
         <input  id="envio" [(ngModel)]="envio">
+        <div class="earn-price">
+          <button md-button class="btn-price btn-float-orange" (click)="setOption()">Por precio</button>
+        </div>
+        <div class="earn-for-price" *ngIf="option">
+          <label for="monto">Ganancia por monto:</label>
+          <input  id="monto" [(ngModel)]="monto">
+          <span >Ganancia: <span class="earn"> {{precioDolares | calculatorEarnForPrice: [precioDolarToday, prime,monto, envio, porcentaje]}}</span></span>
+        </div>
       </div>
       
       <div class="form-answer">

@@ -6,8 +6,7 @@ import { CoreModule } from './core/core.module';
 import { ShellComponent } from './core/shell/shell.component';
 
 @NgModule({
-  declarations: [
- ],
+  declarations: [],
   imports: [
     BrowserModule,
     FormsModule,
