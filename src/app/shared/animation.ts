@@ -15,21 +15,5 @@ export const slide: AnimationEntryMetadata =
                 transform:'translateX(100%)'
             }),
             animate('0.3s ease-in')
-        ]),
-        transition(':leave',[
-            animate('0.3s ease-out', style({
-                opacity:0,
-                transform:'translateX(-100%)'
-            }))
         ])
     ]);
-
-export const shrinkOut: AnimationEntryMetadata = [
-  trigger('shrinkOut', [
-    state('in', style({height: '*'})),
-    transition('* => void', [
-      style({height: '*'}),
-      animate(250, style({height: 0}))
-    ])
-  ])
-]

@@ -13,6 +13,7 @@ import { FooterComponent } from './shell/footer/footer.component';
 import { PageNotFoundComponent } from './shell/page-not-found/page-not-found.component';
 import { ProductoComponent } from './../home/producto/producto.component';
 import { ProductosService } from './../services/productos.service';
+import { PricesService } from './../services/prices.service';
 
 
 export const firebaseConfig = {
@@ -48,7 +49,7 @@ const routes: Routes = [
     BrowserAnimationsModule
   ],
   declarations: [ShellComponent, TopBarComponent, MainContentComponent, FooterComponent, PageNotFoundComponent, ProductoComponent],
-  providers:[ProductosService],
+  providers:[ProductosService, PricesService],
   exports: [ShellComponent]
 })
 export class CoreModule { }

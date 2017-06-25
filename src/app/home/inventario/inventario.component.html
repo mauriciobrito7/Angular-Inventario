@@ -5,8 +5,11 @@
     </div>
     <div class="inventory-table">
       <div class="inventory-table__info">
-        <div class="shipments">Envios: 20000</div>
-        <div class="dolar">Dolar: 5800 <md-icon>more_vert</md-icon></div>
+        <div class="shipments">Envios: {{prices.envio}}</div>
+        <div class="prime">Prime: {{prices.prime}}</div>
+        <div class="dolar">Dolar: {{prices.precioDolarToday}} 
+          <button md-button> <md-icon>more_vert</md-icon></button>
+        </div>
       </div>
     </div>
     <table>

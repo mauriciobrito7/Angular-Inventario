@@ -24,7 +24,7 @@
     }
   ],
  
-  "start_url": "index.html?launcher=true",
+  "start_url": "./?utm_source=web_app_manifest",
   "theme_color": "#191919",
   "background_color": "#191919",
   "display": "standalone",
