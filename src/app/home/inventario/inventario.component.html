@@ -3,14 +3,19 @@
       <button md-button class="orders btn-blue">Pedidos</button>
       <input type="search" class="filter">
     </div>
+
     <div class="inventory-table">
       <div class="inventory-table__info">
         <div class="shipments">Envios: {{prices.envio}}</div>
         <div class="prime">Prime: {{prices.prime}}</div>
+        <div class="percentage">Porcentaje: {{prices.porcentaje}}</div>
         <div class="dolar">Dolar: {{prices.precioDolarToday}} 
-          <button md-button> <md-icon>more_vert</md-icon></button>
+          <button md-icon-button [mdMenuTriggerFor]="menu"><md-icon>more_vert</md-icon></button>
         </div>
       </div>
+      <md-menu #menu="mdMenu" class="mdMenu">
+        <button md-menu-item >Editar</button>
+      </md-menu>
     </div>
     <table>
       <thead>
@@ -32,7 +37,8 @@
         </tr>
       </tbody>
     </table>
-    <div class="add-button">
-      <button md-icon-button class=" btn-float-blue" routerLink="/"><md-icon>add</md-icon></button>
+    <div class="container-button__add">
+      <button class="addButton btn-blue" md-icon-button routerLink="/"><md-icon>add</md-icon></button>
     </div>
+
 </div>

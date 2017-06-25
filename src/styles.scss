@@ -77,58 +77,72 @@ input{
 }
 
 b, strong { font-weight: bold;}
-table{
-  width: 100%;
+table {
+	border: 1px solid color(grey);
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	border-collapse: collapse;
+	border-spacing: 0;
 }
-@media only screen and (max-width: 800px) {
-	
-	/* Force table to not be like tables anymore */
-	table, 
-	thead, 
-	tbody, 
-	th, 
-	td, 
-	tr { 
-		display: block; 
-	}
- 
-	/* Hide table headers (but not display: none;, for accessibility) */
-	thead tr { 
-		position: absolute;
-		top: -9999px;
-		left: -9999px;
-	}
- 
-	tr { border: 1px solid color(grey); }
- 
-	td { 
-		/* Behave  like a "row" */
-		border: none;
-		border-bottom: 1px solid color(grey); 
-		position: relative;
-		padding-left: 50%; 
-		white-space: normal;
-	}
- 
-	td:before { 
-		/* Now like a table header */
-		position: absolute;
-		/* Top/left values mimic padding */
-		left: 0px;
-		width: 45%; 
-		padding:$gutter; 
-		white-space: nowrap;
-		text-align:left;
-		font-weight: bold;
-    background: color(blueGradient2);
-	}
- 
-	/*
-	Label the data
-	*/
-	td:before { 
-    content: attr(data-title);
-    color: color(white);
-   }
+
+table thead{
+	background: color(blueGradient2);
+	color:color(white)
 }
-			
+
+table tr {
+	border: 1px solid color(grey);
+	padding: 5px;
+	color:color(white);
+
+}
+
+table tr:nth-child(even) {
+	background-color: color(black);
+}
+
+table td, table th {
+	padding: 10px;
+	text-align: center;
+}
+
+table th {
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+/*//////////////////////////////////////////////*/
+
+@media screen and (max-width: 520px) {
+	table {
+		border:0;
+	}
+
+	table tr {
+		margin-bottom: $gutter;
+		display: block;
+		border-bottom: 1px solid color(grey);
+
+	}
+
+	table td {
+		display: block;
+		text-align: right;
+		border-bottom: 1px dotted color(grey);
+	}
+
+	table td:last-child {
+		border-bottom: 0;
+	}
+
+	table td:before {
+		content: attr(data-title);
+		float: left;
+		text-transform: uppercase;
+	}
+
+	table thead {
+		display: none;
+	}
+}

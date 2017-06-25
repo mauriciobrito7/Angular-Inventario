@@ -10,7 +10,14 @@
             border-radius: $gutter;
             height: $gutter * 1.3;
             background: color(background);
+            width: 45%;
+            @include desde($medium){
+                width: 25%;
+            }
         }
+    }
+    table{
+        margin-bottom:$gutter *3 !important; 
     }
     &-header,&-table{
         width: 100%;
@@ -20,8 +27,9 @@
         background: color(black);
         margin-top:$gutter*1.5 !important;
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
-        .dolar, .shipments, .prime{
+        .dolar, .shipments, .prime, .percentage{
             padding: $gutter*0.7;
             display: flex;
             align-items: center;
@@ -30,13 +38,8 @@
             justify-content: flex-end;
         }
     }
-
-    .add-button{
-        display: flex;
-        width: 100%;
-        justify-content: flex-end;
-        margin-top: $gutter !important;
-        margin-bottom: $gutter !important;
+    .container-button__add{
+        width: 90%;
     }
 
 }

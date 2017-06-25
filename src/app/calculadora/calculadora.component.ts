@@ -1,5 +1,7 @@
 import { Component, OnInit, HostBinding} from '@angular/core';
 import { slide } from '../shared/animation';
+import { IPrices } from './../services/prices.interface';
+import { PricesService } from './../services/prices.service';
 
 @Component({
   selector: 'app-calculadora',
@@ -8,17 +10,24 @@ import { slide } from '../shared/animation';
   animations:[slide]
 })
 export class CalculadoraComponent implements OnInit {
+   prices: IPrices;
    precioDolares = 60;
-   precioDolarToday = 8100 ;
-   prime = 3;
-   porcentaje = 35;
-   envio = 21000;
+   precioDolarToday;
+   prime;
+   porcentaje;
+   envio;
    option = false;
    monto = 0;
+   earn_for_price = 0;
   
   @HostBinding('@routeAnimation') routeAnimation = true;
   @HostBinding('style.display') dislay = 'block'; 
-  constructor() { 
+  constructor(pricesService : PricesService) {
+    this.prices = pricesService.getPrices();
+    this.precioDolarToday = this.prices.precioDolarToday;
+    this.prime = this.prices.prime;
+    this.porcentaje = this.prices.porcentaje;
+    this.envio = this.prices.envio;
   }
   setOption(){
     if(this.option)
@@ -28,7 +37,4 @@ export class CalculadoraComponent implements OnInit {
   }
   ngOnInit() {
   }
-
-
-
 }

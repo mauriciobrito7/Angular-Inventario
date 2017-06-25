@@ -15,15 +15,14 @@
         <label for="envio">Costo de envio en Bsf:</label>
         <input  id="envio" [(ngModel)]="envio">
         <div class="earn-price">
-          <button md-button class="btn-price btn-float-orange" (click)="setOption()">Por precio</button>
+          <button md-button class="btn-price btn-float-orange" (click)="setOption()">Por precio <md-icon *ngIf="option">visibility</md-icon> <md-icon *ngIf="!option">visibility_off</md-icon></button>
         </div>
         <div class="earn-for-price" *ngIf="option">
-          <label for="monto">Ganancia por monto:</label>
+          <label for="monto">Monto a calcular:</label>
           <input  id="monto" [(ngModel)]="monto">
-          <span >Ganancia: <span class="earn"> {{precioDolares | calculatorEarnForPrice: [precioDolarToday, prime,monto, envio, porcentaje]}}</span></span>
+          <span >Ganancia: <span class="earn"> {{ precioDolares | calculatorEarnForPrice: [precioDolarToday, prime,monto, envio, porcentaje,earn_for_price ]}}</span></span>
         </div>
       </div>
-      
       <div class="form-answer">
         <span>Precio de venta: <span class="price">{{precioDolares | calculatorPrice: [precioDolarToday, prime, porcentaje, envio]}}</span></span> <span>Ganancia: <span class="earn"> {{precioDolares | calculatorEarn: [precioDolarToday, prime, porcentaje, envio]}}</span></span>
       </div>

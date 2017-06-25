@@ -3,7 +3,7 @@ import { IProduct } from './productos.interface';
 
 @Injectable()
 export class ProductosService {
-  products : IProduct[];
+  private products : IProduct[];
   constructor() {
 
     this.products = [

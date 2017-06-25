@@ -3,10 +3,10 @@ import { IPrices } from './prices.interface';
 
 @Injectable()
 export class PricesService {
-prices : IPrices;
+ private prices : IPrices;
   constructor() {
     this.prices = {
-      precioDolarToday:8100, prime:3, envio :21000
+      precioDolarToday:8100, prime:3, envio :21000, porcentaje:35
     } 
    }
 
@@ -21,5 +21,8 @@ prices : IPrices;
   }
   setEnvio(precio:number){
     this.prices.envio = precio;
+  }
+  setPorcentaje(precio:number){
+    this.prices.porcentaje = precio;
   }
 }

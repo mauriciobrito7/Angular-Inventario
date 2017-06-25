@@ -14,6 +14,7 @@ import { PageNotFoundComponent } from './shell/page-not-found/page-not-found.com
 import { ProductoComponent } from './../home/producto/producto.component';
 import { ProductosService } from './../services/productos.service';
 import { PricesService } from './../services/prices.service';
+import { BackgroundDirective } from './../directives/background.directive';
 
 
 export const firebaseConfig = {
@@ -46,9 +47,9 @@ const routes: Routes = [
     RouterModule.forRoot(routes),
     AngularFireModule.initializeApp(firebaseConfig),
     MaterialModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
   ],
-  declarations: [ShellComponent, TopBarComponent, MainContentComponent, FooterComponent, PageNotFoundComponent, ProductoComponent],
+  declarations: [ShellComponent, TopBarComponent, MainContentComponent, FooterComponent, PageNotFoundComponent, ProductoComponent,BackgroundDirective],
   providers:[ProductosService, PricesService],
   exports: [ShellComponent]
 })
