@@ -22,7 +22,7 @@ export class ProductoComponent implements OnInit {
     this.route.params.forEach((params: Params)=>{
       console.log(params);
       let id = params["id"];
-      this.product = this.productsService.find(parseInt(id))
+      this.product = this.productsService.getProduct(parseInt(id))
     })
   }
 

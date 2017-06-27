@@ -1,9 +1,8 @@
 <div class="inventory">
     <div class="inventory-header">
-      <button md-button class="orders btn-blue">Pedidos</button>
-      <input type="search" class="filter">
+      <input class="filter" placeholder="Item ID..." [(ngModel)]="id" (input)="filterItem()" (keypress)="validateFilter()">
+      <button md-button class="orders btn-blue">Pedidos <md-icon>assignment_turned_in</md-icon></button>
     </div>
-
     <div class="inventory-table">
       <div class="inventory-table__info">
         <div class="shipments">Envios: {{prices.envio}}</div>
@@ -37,8 +36,7 @@
         </tr>
       </tbody>
     </table>
+</div>
     <div class="container-button__add">
       <button class="addButton btn-blue" md-icon-button routerLink="/"><md-icon>add</md-icon></button>
     </div>
-
-</div>

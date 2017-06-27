@@ -14,11 +14,19 @@ export class ProductosService {
     ];
 
    }
-  find(id:number): IProduct{
-    return this.products.find((logro)=> logro.id == id);
+  filterForId(id:number): IProduct[]{
+    return this.products.filter((product)=> product.id == id);
     /*
-      return this.logros.find(function(logro){
-        return logro.id == id;
+      return this.products.find(function(logro){
+        return product.id == id;
+      }):
+     */
+  }
+  getProduct(id:number): IProduct{
+    return this.products.find((product)=> product.id == id);
+    /*
+      return this.products.find(function(logro){
+        return product.id == id;
       }):
      */
   }

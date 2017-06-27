@@ -11,12 +11,28 @@ import { IPrices } from './../../services/prices.interface';
 export class InventarioComponent implements OnInit {
   products : IProduct[];
   prices : IPrices;
-  constructor(productsService: ProductosService, pricesService: PricesService) {
-    this.products = productsService.getProducts();
-    this.prices = pricesService.getPrices();
+  id;
+  constructor(private productsService: ProductosService, private pricesService: PricesService) {
+    this.getProducts();
+    this.getPrices();
    }
 
   ngOnInit() {
   }
-
+  getProducts(){
+    this.products = this.productsService.getProducts();
+  }
+  getPrices(){
+    this.prices = this.pricesService.getPrices();
+  }
+  validateFilter(){
+    if(this.id == 1){
+      this.getProducts();
+    }
+    console.log("hola");
+  }
+  filterItem(){
+    this.products = this.productsService.filterForId(this.id);
+    console.log(this.id);
+  }
 }
