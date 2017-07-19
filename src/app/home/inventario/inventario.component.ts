@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { ProductosService } from './../../services/productos.service';
 import { IProduct } from './../../services/productos.interface';
 import { IPrices } from './../../services/prices.interface';
+
 @Component({
   selector: 'app-inventario',
   templateUrl: './inventario.component.html',
@@ -15,6 +16,7 @@ export class InventarioComponent implements OnInit {
   constructor(private productsService: ProductosService, private pricesService: PricesService) {
     this.getProducts();
     this.getPrices();
+  
    }
 
   ngOnInit() {

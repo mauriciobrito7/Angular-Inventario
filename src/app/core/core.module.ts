@@ -15,6 +15,9 @@ import { ProductoComponent } from './../home/producto/producto.component';
 import { ProductosService } from './../services/productos.service';
 import { PricesService } from './../services/prices.service';
 import { BackgroundDirective } from './../directives/background.directive';
+import { HomeModule } from './../home/home.module';
+import { CalculadoraModule } from './../calculadora/calculadora.module';
+
 
 
 export const firebaseConfig = {
@@ -48,8 +51,10 @@ const routes: Routes = [
     AngularFireModule.initializeApp(firebaseConfig),
     MaterialModule,
     BrowserAnimationsModule,
+    HomeModule,
+    CalculadoraModule
   ],
-  declarations: [ShellComponent, TopBarComponent, MainContentComponent, FooterComponent, PageNotFoundComponent, ProductoComponent,BackgroundDirective],
+  declarations: [ShellComponent, TopBarComponent, MainContentComponent, FooterComponent, PageNotFoundComponent, ProductoComponent,BackgroundDirective, ],
   providers:[ProductosService, PricesService],
   exports: [ShellComponent]
 })

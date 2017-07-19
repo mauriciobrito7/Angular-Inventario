@@ -70,7 +70,7 @@ label, input, textarea, article, details, figcaption, figure, footer, header, ma
 
 input{
     border-radius: 2px;
-    background: color(background);
+	background: #212121;
     color: color(white);
     border: 0.3px solid color(grey);
     padding: $gutter * 0.3;

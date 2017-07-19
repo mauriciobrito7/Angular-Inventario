@@ -9,7 +9,6 @@
         .filter{
             border-radius: $gutter;
             height: $gutter * 1.5;
-            background: color(background);
             width: 45%;
             @include desde($medium){
                 width: 25%;

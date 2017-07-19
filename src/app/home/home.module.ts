@@ -24,7 +24,7 @@ const routes: Routes = [
     RouterModule.forChild(routes),
     FormsModule
   ],
-  declarations: [HomeComponent, InventarioComponent],
+  declarations: [HomeComponent, InventarioComponent,],
   providers:[]
 })
 export class HomeModule { }

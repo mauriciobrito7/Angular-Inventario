@@ -1,6 +1,6 @@
-<h3 class=" main-title">
+<h2 class=" main-title">
     <span>Calculadora</span>
-</h3>
+</h2>
 <main class="main">
     <div class="form">
       <div class="form-group">
@@ -20,11 +20,11 @@
         <div class="earn-for-price" *ngIf="option">
           <label for="monto">Monto a calcular:</label>
           <input  id="monto" [(ngModel)]="monto">
-          <span >Ganancia: <span class="earn"> {{ precioDolares | calculatorEarnForPrice: [precioDolarToday, prime,monto, envio, porcentaje,earn_for_price ]}}</span></span>
+          <span >Ganancia: <span class="earn"> {{ precioDolares | number:'.0-2' | calculatorEarnForPrice: [precioDolarToday, prime,monto, envio, porcentaje,earn_for_price ]  | currency:'VEF':true}}</span></span>
         </div>
       </div>
       <div class="form-answer">
-        <span>Precio de venta: <span class="price">{{precioDolares | calculatorPrice: [precioDolarToday, prime, porcentaje, envio]}}</span></span> <span>Ganancia: <span class="earn"> {{precioDolares | calculatorEarn: [precioDolarToday, prime, porcentaje, envio]}}</span></span>
+        <span>Precio de venta: <span class="price">{{precioDolares | number:'.0-2' | calculatorPrice: [precioDolarToday, prime, porcentaje, envio]  | currency:'VEF':true}}</span></span> <span>Ganancia: <span class="earn"> {{precioDolares | number:'.0-2' | calculatorEarn: [precioDolarToday, prime, porcentaje, envio] | currency:'VEF':true }}</span></span>
       </div>
     </div>
 </main>

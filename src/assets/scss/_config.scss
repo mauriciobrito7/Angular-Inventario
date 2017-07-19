@@ -27,7 +27,7 @@ $font-branding:'Fugaz One', cursive;
     display: flex;
     flex-wrap: wrap;
     background: color(card);
-    @include box_shadow(2);
+    @include box_shadow(3);
 }
 
 @mixin card-content{

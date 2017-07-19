@@ -2,6 +2,7 @@ import { Component, OnInit, HostBinding} from '@angular/core';
 import { slide } from '../shared/animation';
 import { IPrices } from './../services/prices.interface';
 import { PricesService } from './../services/prices.service';
+import { toggle } from './../shared/animation';
 
 @Component({
   selector: 'app-calculadora',

@@ -6,7 +6,7 @@ export class PricesService {
  private prices : IPrices;
   constructor() {
     this.prices = {
-      precioDolarToday:8100, prime:3, envio :21000, porcentaje:35
+      precioDolarToday:8200, prime:3, envio :32000, porcentaje:30
     } 
    }
 

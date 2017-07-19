@@ -5,10 +5,10 @@
     </div>
     <div class="inventory-table">
       <div class="inventory-table__info">
-        <div class="shipments">Envios: {{prices.envio}}</div>
-        <div class="prime">Prime: {{prices.prime}}</div>
+        <div class="shipments">Envios: {{prices.envio | currency:'VEF':true }}</div>
+        <div class="prime">Prime: {{prices.prime |currency}}</div>
         <div class="percentage">Porcentaje: {{prices.porcentaje}}</div>
-        <div class="dolar">Dolar: {{prices.precioDolarToday}} 
+        <div class="dolar">Dolar: {{prices.precioDolarToday | currency:'VEF':true}} 
           <button md-icon-button [mdMenuTriggerFor]="menu"><md-icon>more_vert</md-icon></button>
         </div>
       </div>
@@ -31,8 +31,8 @@
           <td data-title="Código">#{{product.id}}</td>
           <td data-title="Nombre">{{product.title}}</td>
           <td data-title="Existencia">{{product.existence}}</td>
-          <td data-title="Precio Bsf">{{product.priceBsf}}</td>
-          <td data-title="Precio $">{{product.priceDolar}}</td>
+          <td data-title="Precio Bsf"></td>
+          <td data-title="Precio $">{{product.priceDolar |currency}}</td>
         </tr>
       </tbody>
     </table>

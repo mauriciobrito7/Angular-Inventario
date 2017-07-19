@@ -19,7 +19,7 @@
         align-items: center;
     }
     label, input, .earn-price{
-        margin: $gutter*0.7 0 !important;
+        margin: $gutter*0.3 0 !important;
         width: 55%;
         display: block;
         @include desde($medium){
