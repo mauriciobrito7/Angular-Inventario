@@ -13,7 +13,7 @@ export class CalculatorEarnForPricePipe implements PipeTransform {
     let envio = parseFloat(args[3]);
     let porcentaje =  0.01 * parseFloat(args[4]);
     let precioTotal = (( precioDolarToday * ( precioDolares + prime)) + envio);
-    precioTotal = (monto - precioTotal) ;
+    precioTotal = (monto - precioTotal) + (((parseFloat(value)* 0.07)+ prime)* precioDolarToday) ;
     return (isNaN(precioTotal) || monto == 0 ? 0 : precioTotal);
   }
 
